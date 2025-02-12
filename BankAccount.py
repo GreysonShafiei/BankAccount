@@ -1,10 +1,12 @@
 class BankAccount:
     bank_title = "Generic Ahh Bank"
 
-    def __init__(self, customer_name, current_balance, minimum_balance):
+    def __init__(self, customer_name, account_number, routing_number, current_balance, minimum_balance):
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
+        self._account_number = account_number  # Protected
+        self.__routing_number = routing_number  # Private
 
     def deposit(self, amount):
         self.current_balance += amount
