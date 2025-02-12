@@ -24,7 +24,7 @@ class BankAccount:
         print("Customer Name:", self.customer_name)
         print("Current Balance:", self.current_balance)
         print(f"Minimum Balance: {self.minimum_balance}\n")
-
+'''
 person1 = BankAccount("John", 100000, 100000)
 person2 = BankAccount("Wendy", 200000, 100000)
 
@@ -46,3 +46,4 @@ person2.withdraw(1500)
 print("\nFinal Accounts")
 person1.print_customer_information()
 person2.print_customer_information()
+'''
